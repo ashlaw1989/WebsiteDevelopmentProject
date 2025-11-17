@@ -1,0 +1,61 @@
+header {
+    background-color: rgb(126, 217, 87);
+    height: 75px;
+    border-radius: 10px;
+    font-size: 2em;
+    line-height: 10px;
+    padding: 5px 15px;
+}
+body {
+    background-color: rgb(238, 228, 204);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo {
+    width: 200px;
+    height: auto;
+    margin-top: 20px;
+}
+nav a {
+    text-decoration: none;
+    padding: 5px;
+    color: rgb(108, 91, 66);
+}
+nav {
+    text-align: right;
+    color: rgb(108, 91, 66)
+}
+nav ul {
+    list-style-type: none;
+}
+nav li {
+    text-align: right;
+    display: inline;
+    text-decoration: none;
+    color: rgb(184, 104, 64)
+}
+main {
+    color: rgb(51, 102, 102);
+}
+main #heading {
+    text-align: center;
+    font-size: 1.4em;
+    margin-top: 75px;
+}
+main #heading p {
+    font-size: 1.7em;     /* main #heading font-size not changing p font */
+    margin-top: -15px;
+}
+main #summary {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 70px;
+    font-size: 1.5em;
+    padding: 0 100px;
+    padding-top: 40px;
+}
+main #summary desc {
+    flex-direction: column;
+}
