@@ -59,3 +59,50 @@ main #summary {
 main #summary desc {
     flex-direction: column;
 }
+
+
+#geocaches ul {
+    margin-top: 75px;
+    margin-left: 20%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 100px;
+    width: 60%;
+}
+#geocaches li {
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(126, 217, 87);
+    background-color: rgb(126, 217, 87);
+    border-radius: 10px;
+    list-style: none;
+    text-align: center;
+}
+#geocaches p {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 200px;
+    margin-top: 30px;
+}
+#geocaches .start {
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    background-color: rgb(126, 217, 87);
+    border-radius: 10px;
+    margin-left: 25%;
+    z-index: 1;
+}
+#forest {
+    background-image: url("forest.jpg");
+    background-position: center;
+}
+#park {
+    background-image: url("park.jpg"); 
+     background-position: center;
+}
+#city {
+    background-image: url("indy.jpg"); 
+    background-position: center;  
+}
