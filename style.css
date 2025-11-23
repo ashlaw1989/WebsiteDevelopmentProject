@@ -2,7 +2,7 @@ header {
     background-color: rgb(126, 217, 87);
     height: 75px;
     border-radius: 10px;
-    font-size: 2em;
+    font-size: 42px;
     line-height: 10px;
     padding: 5px 15px;
 }
@@ -16,6 +16,12 @@ body {
     width: 200px;
     height: auto;
     margin-top: 20px;
+    margin-left: 0;
+}
+.logo-video {
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
 }
 nav a {
     text-decoration: none;
@@ -24,7 +30,7 @@ nav a {
 }
 nav {
     text-align: right;
-    color: rgb(108, 91, 66)
+    color: rgb(108, 91, 66);
 }
 nav ul {
     list-style-type: none;
@@ -33,34 +39,31 @@ nav li {
     text-align: right;
     display: inline;
     text-decoration: none;
-    color: rgb(184, 104, 64)
+    color: rgb(184, 104, 64);
 }
 main {
     color: rgb(51, 102, 102);
 }
 main #heading {
     text-align: center;
-    font-size: 1.4em;
+    font-size: 24px;
     margin-top: 75px;
 }
 main #heading p {
-    font-size: 1.7em;     /* main #heading font-size not changing p font */
+    font-size: 36px;     
     margin-top: -15px;
+    margin-left: -70px;   /*align w/ "New to Geocaching" */
 }
 main #summary {
     display: flex;
     align-items: center;
     text-align: center;
     gap: 70px;
-    font-size: 1.5em;
+    font-size: 24px;
     padding: 0 100px;
-    padding-top: 40px;
+    padding-top: 20px;
+    line-height: 1.5;
 }
-main #summary desc {
-    flex-direction: column;
-}
-
-
 #geocaches ul {
     margin-top: 75px;
     margin-left: 20%;
@@ -85,14 +88,19 @@ main #summary desc {
     height: 200px;
     margin-top: 30px;
 }
+#geocaches li p strong {
+    margin-top: -25px;         /* push text to border-background so it's readable */
+    color: rgb(108, 91, 66);
+    font-size: 20px;
+}
 #geocaches .start {
     position: absolute;
     bottom: 0;
     width: 50%;
+    height: 25px;
     background-color: rgb(126, 217, 87);
     border-radius: 10px;
     margin-left: 25%;
-    z-index: 1;
 }
 #forest {
     background-image: url("forest.jpg");
@@ -105,4 +113,56 @@ main #summary desc {
 #city {
     background-image: url("indy.jpg"); 
     background-position: center;  
+}
+
+
+
+#login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border: 3px;
+    border-style: solid;
+    border-color: rgb(126, 217, 87);
+    background-color: white;
+    border-radius: 75px;
+    margin: 70px 600px;
+    padding: 25px 0px;
+}
+label[for="login"] {
+    color: rgb(126, 217, 87);
+    font-size: 42px;
+}
+label[for="email"] {
+    color: rgb(108, 91, 66);
+    font-size: 20px;
+}
+label[for="password"] {
+    color: rgb(108, 91, 66);
+    font-size: 20px;
+}
+button[type="submit"] {
+    background-color: rgb(126, 217, 87);
+    border-radius: 10px;
+    width: 25%;
+}
+button[type="button"] {
+    background-color: rgb(126, 217, 87);
+    border-radius: 10px;
+    width: 40%;
+    margin-top: -20px;
+}
+#new-account {
+    padding-top: 30px;
+    color: rgb(108, 91, 66);
+}
+
+
+
+@media (max-width: 600px) {
+    /* fix for phone */
+}
+@media (max-width: 768px) {
+    /* fix for tablet */
 }

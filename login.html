@@ -16,12 +16,20 @@
                 <li><a href="login.html"><strong>Login</strong></a></li>
             </ul>
         </nav>
-        <!-- TODO: Add srcset attribute -->
-        <img src="FunFindsGeocachingLogo.png" alt="Fun Finds Geocaching logo with map, compass, and treasure chest"
-            class="logo">
+        <video controls autoplay loop class="logo-video">
+            <source src="LogoAnimation.mp4"
+                alt="Logo with map, compass, and treasure chest that opens showing treasure">
+            <!-- image for browsers that don’t support mp4 -->
+            <source src="FunFindsGeocachingLogo.png" srcset="FunFindsGeocachingLogo.png 1x,
+                    FunFindsGeocachingLogo@2x.png 2x
+                    FunFindsGeocachingLogo@3x.png 3x" class="logo" alt="Logo with map, compass, and treasure chest">
+        </video>
     </header>
     <main>
-        <form>
+        <form id="login-container">
+            <p>
+                <label for="login"><strong>Login</strong></label>
+            </p>
             <p>
                 <label for="email">Email</label>
                 <input type="email" id="email" placeholder="example@domain.com">
@@ -31,11 +39,11 @@
                 <input type="password" id="password" placeholder="Password">
             </p>
             <button type="submit">Login</button>
-            <p>Don't have an account yet?</p>
+            <p id="new-account">Don't have an account yet?</p>
             <button type="button">Create Account</button>
         </form>
     </main>
-        <footer>
+    <footer>
         <!-- May add something later -->
     </footer>
 </body>
