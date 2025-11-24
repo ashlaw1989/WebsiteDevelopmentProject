@@ -41,18 +41,18 @@ nav li {
     text-decoration: none;
     color: rgb(184, 104, 64);
 }
-main {
-    color: rgb(51, 102, 102);
-}
 main #heading {
     text-align: center;
     font-size: 24px;
     margin-top: 75px;
 }
-main #heading p {
+main #heading h2 {
     font-size: 36px;     
     margin-top: -15px;
     margin-left: -70px;   /*align w/ "New to Geocaching" */
+}
+main #summary h3 {
+    font-size: 30px;
 }
 main #summary {
     display: flex;
@@ -64,12 +64,19 @@ main #summary {
     padding-top: 20px;
     line-height: 1.5;
 }
+
+
+main {
+    color: rgb(108, 91, 66);
+    text-align: center;
+    font-size: 20px;
+}
 #geocaches ul {
-    margin-top: 75px;
+    margin-top: 25px;
     margin-left: 20%;
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 100px;
+    gap: 75px;
     width: 60%;
 }
 #geocaches li {
@@ -130,8 +137,8 @@ main #summary {
     margin: 70px 600px;
     padding: 25px 0px;
 }
-label[for="login"] {
-    color: rgb(126, 217, 87);
+#login-container h1 {
+    color: rgb(108, 91, 66);
     font-size: 42px;
 }
 label[for="email"] {
