@@ -271,15 +271,13 @@ button[type="button"] {
     #geocaches ul {
         margin-top: 50px;
         grid-template-columns: auto auto;
-}
+        gap: 25px;
+    }
     main {
         font-size: 18px;
     }
     #geocaches li p strong {
         font-size: 18px;
-    }
-    #geocaches ul {
-        gap: 50px;
     }
 }
 @media (max-width: 600px) {
