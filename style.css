@@ -15,7 +15,6 @@ body {
 .logo {
     width: 200px;
     height: auto;
-    margin-top: 20px;
     margin-left: 0;
 }
 .logo-video {
@@ -34,6 +33,7 @@ nav {
 }
 nav ul {
     list-style-type: none;
+    white-space: nowrap;
 }
 nav li {
     text-align: right;
@@ -49,7 +49,7 @@ main #heading {
 main #heading h2 {
     font-size: 36px;     
     margin-top: -15px;
-    margin-left: -70px;   /*align w/ "New to Geocaching" */
+    margin-left: -70px;    /*align w/ "New to Geocaching" */
 }
 main #summary h3 {
     font-size: 30px;
@@ -71,13 +71,16 @@ main {
     text-align: center;
     font-size: 20px;
 }
+#geocaches {
+    margin-top: 50px;
+}
 #geocaches ul {
-    margin-top: 25px;
-    margin-left: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 75px;
-    width: 60%;
+    max-width: 1500px;
 }
 #geocaches li {
     border: 1px;
@@ -115,13 +118,12 @@ main {
 }
 #park {
     background-image: url("park.jpg"); 
-     background-position: center;
+    background-position: center;
 }
 #city {
     background-image: url("indy.jpg"); 
     background-position: center;  
 }
-
 
 
 #login-container {
@@ -134,7 +136,8 @@ main {
     border-color: rgb(126, 217, 87);
     background-color: white;
     border-radius: 75px;
-    margin: 70px 600px;
+    margin: 70px auto; 
+    max-width: 350px; 
     padding: 25px 0px;
 }
 #login-container h1 {
@@ -166,10 +169,147 @@ button[type="button"] {
 }
 
 
+@media (max-width: 1600px) {
+    /* for desktop */
+    main #heading {
+        font-size: 20px;
+        margin-top: 200px;
+    }
+    main #heading h2 {
+        font-size: 30px;
+    }
+    main #summary h3 {
+        font-size: 34px;
+    }
+    main #summary {
+        gap: 25px;
+        font-size: 24px;
+        padding: 0 50px;
+        padding-top: 75px;
+    }
+}
 
-@media (max-width: 600px) {
-    /* fix for phone */
+@media (max-width: 1290px) {
+    /* for lg laptop */
+    .logo {
+        width: 150px;
+        height: auto;
+        margin-top: -14px;
+    }
+    .logo-video {
+    margin-top: 0px;
+    }
+    #summary .navman {
+        width: 150px;
+        height: auto;
+    }
+    #summary .scouting {
+        width: 150px;
+        height: auto;
+    }
+    main #summary {
+        font-size: 22px;
+        padding: 0 25px;
+        padding-top: 0px;
+    }
+    #geocaches ul {
+        margin-top: 100px;
+        margin-left: 5%;
+        margin-right: 5%;
+        gap: 50px;
+    }
+    #login-container {
+    margin-top: 200px;
+    padding: 25px 0px;
+    }
+}
+@media (max-width: 992px) {
+    /* for sm-med laptop */
+    
+    main #heading {
+        font-size: 18px;
+        margin-top: 150px;
+    }
+    main #heading h2 {
+        font-size: 22px;
+        margin-left: -25px;    /*align w/ "New to Geocaching" */
+    }
+    main #summary h3 {
+        font-size: 28px;
+        margin-top: 75px;
+    }
+    main #summary {
+        font-size: 18px;
+        padding: 0 5px;
+    }
+    #geocaches ul {
+        margin-top: 100px;
+    }
 }
 @media (max-width: 768px) {
-    /* fix for tablet */
+    /* for tablet */
+    .logo {
+        width: 100px;
+        height: auto;
+    }
+    header {
+        height: 50px;
+        font-size: 32px;
+        padding: 5px 15px;
+    }
+    main #heading {
+        font-size: 16px;
+    }
+    #summary .navman {
+        width: 100px;
+        height: auto;
+    }
+    #summary .scouting {
+        width: 100px;
+        height: auto;
+    }
+    #geocaches ul {
+        margin-top: 50px;
+    }
+    main {
+        font-size: 18px;
+    }
+    #geocaches li p strong {
+        font-size: 18px;
+    }
+    #geocaches ul {
+        gap: 50px;
+    }
 }
+@media (max-width: 600px) {
+    /* for phone */
+    .logo {
+        margin-top: 0px;
+    }
+    nav ul {
+        margin-right: -15px;   /* pulls green border to right edge of screen */
+    }
+    header {
+        font-size: 26px;
+        padding: 5px 15px;
+    }
+    main #heading {
+        margin-top: 100px;
+        font-size: 12px;
+    }
+    main #heading h2 {
+        font-size: 18px;
+    }
+    main #summary {
+        font-size: 14px;
+    }
+    #geocaches li p strong {
+        font-size: 14px;
+    }
+    #geocaches .start {
+    width: 65%;
+    height: 25px;
+    margin-left: 25%;
+    }
+}
+
