@@ -270,7 +270,9 @@ button[type="button"] {
     }
     #geocaches ul {
         margin-top: 50px;
-    }
+        display: grid;
+        grid-template-columns: auto auto;
+}
     main {
         font-size: 18px;
     }
