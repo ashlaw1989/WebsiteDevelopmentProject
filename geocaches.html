@@ -5,21 +5,37 @@
     <title>Fun Finds Geocaching Geocaching</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('navLinks');
+            nav.classList.toggle('active');
+        }
+    </script>
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html"><strong>Home</strong></a></li> |
-                <li><a href="geocaches.html"><strong>Geocaches</strong></a></li> |
-                <li><a href="login.html"><strong>Login</strong></a></li>
-            </ul>
-        </nav>
-        <img src="FunFindsGeocachingLogo.png" srcset="FunFindsGeocachingLogo.png 1x,
-                    FunFindsGeocachingLogo@2x.png 2x
-                    FunFindsGeocachingLogo@3x.png 3x" alt="Logo with map, compass, and treasure chest" class="logo">
+        <div class="nav-container">
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav id="navLinks">
+                <ul>
+                    <li><a href="index.html"><strong>Home</strong></a></li>
+                    <li><a href="geocaches.html"><strong>Geocaches</strong></a></li>
+                    <li><a href="login.html"><strong>Login</strong></a></li>
+                    <li><a href="about.html"><strong>About</strong></a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
+    <div class="logo-wrapper">
+        <img src="FunFindsGeocachingLogo.png" alt="Logo with map, compass, and treasure chest" class="logo">
+    </div>
+
     <main>
         <h1 id="geacache-heading">Geocache Sites</h1>
         <section id="geocaches">
@@ -64,7 +80,8 @@
         </section>
     </main>
     <footer>
-        <!-- May add something later -->
+        Questions? Comments? Concerns?
+        <a href="contact.html">Contact Me</a>
     </footer>
 </body>
 

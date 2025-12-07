@@ -5,27 +5,47 @@
     <title>Fun Finds Geocaching Login</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('navLinks');
+            nav.classList.toggle('active');
+        }
+    </script>
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html"><strong>Home</strong></a></li> |
-                <li><a href="geocaches.html"><strong>Geocaches</strong></a></li> |
-                <li><a href="login.html"><strong>Login</strong></a></li>
-            </ul>
-        </nav>
-        <video controls autoplay loop muted class="logo-video">
-            <source src="LogoAnimation.mp4"
-                alt="Logo with map, compass, and treasure chest that opens showing treasure">
-            <track kind="captions" label="Full Audio Captions" src="captions.vtt" srclang="en" default>
-            <!-- image for browsers that don’t support mp4 -->
-            <img src="FunFindsGeocachingLogo.png" srcset="FunFindsGeocachingLogo.png 1x,
-                    FunFindsGeocachingLogo@2x.png 2x
-                    FunFindsGeocachingLogo@3x.png 3x" class="logo" alt="Logo with map, compass, and treasure chest">
-        </video>
+        <div class="nav-container">
+            <!-- Hamburger menu for mobile -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <nav id="navLinks">
+                <ul>
+                    <li><a href="index.html"><strong>Home</strong></a></li>
+                    <li><a href="geocaches.html"><strong>Geocaches</strong></a></li>
+                    <li><a href="login.html"><strong>Login</strong></a></li>
+                    <li><a href="about.html"><strong>About</strong></a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
+    <div class="logo-wrapper">
+        <video autoplay loop controls muted class="logo-video">
+            <source src="LogoAnimation.mp4" type="video/mp4">
+            <track kind="captions" label="Full Audio Captions" src="captions.vtt" srclang="en" default>
+            <!-- Fallback image -->
+            <img src="FunFindsGeocachingLogo.png" srcset="FunFindsGeocachingLogo.png 1x,
+                 FunFindsGeocachingLogo@2x.png 2x,
+                 FunFindsGeocachingLogo@3x.png 3x" alt="Logo with map, compass, and treasure chest" class="logo">
+        </video>
+    </div>
+
+
     <main>
         <form id="login-container">
             <h1>Login</h1>
@@ -42,9 +62,11 @@
             <button type="button">Create Account</button>
             <!-- maxlength="" pattern="" to require more secure password -->
         </form>
+        <script src="login.js"></script>
     </main>
     <footer>
-        <!-- May add something later -->
+        Questions? Comments? Concerns?
+        <a href="contact.html">Contact Me</a>
     </footer>
 </body>
 
