@@ -126,10 +126,13 @@ main {
     position: absolute;
     bottom: 0;
     width: 50%;
-    height: 25px;
+    height: 30px;
     background-color: rgb(126, 217, 87);
     border-radius: 10px;
     margin-left: 25%;
+}
+#geocaches .start:hover {
+    background-color: rgb(238, 228, 204);
 }
 #forest {
     background-image: url("forest.jpg");
@@ -181,6 +184,16 @@ button[type="button"] {
     border-radius: 10px;
     width: 40%;
     margin-top: -20px;
+    height: 30px;
+}
+button[type="button"]:hover {
+    background-color: rgb(238, 228, 204);
+}
+button[type="submit"] {
+    height: 30px;
+}
+button[type="submit"]:hover {
+    background-color: rgb(238, 228, 204);
 }
 #new-account {
     padding-top: 30px;
@@ -233,7 +246,7 @@ footer a {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    background-color: rgb(238, 228, 204);
+    background-color: rgb(126, 217, 87);
     padding: 25px;
     border-radius: 10px;
     border: 3px ;
@@ -243,6 +256,7 @@ footer a {
     text-align: center;
     color:rgb(108, 91, 66);
 }
+
 .popup-container.open {
     display: flex;
 }
@@ -252,11 +266,11 @@ footer a {
 }
 .close {
     color: rgb(108, 91, 66);
-    font-weight: bold;
+    font-weight: 900;
     bottom: 0;
     width: 50%;
-    height: 25px;
-    background-color: rgb(126, 217, 87);
+    height: 40px;
+    background-color: rgb(238, 228, 204);
     border-radius: 10px;
     margin-left: 25%;
 }
