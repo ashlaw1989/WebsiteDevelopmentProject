@@ -51,7 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
             let marker;
             let circle;
-            let zoomed;
             var greenIcon = new L.Icon({
                 iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
                 shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
@@ -74,10 +73,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 circle = L.circle([lat, lng], {
                     radius: accuracy
                 }).addTo(map);
-
-                if (!zoomed) {
-                    zoomed = map.fitBounds(circle.getBounds());
-                }
 
             }
 
