@@ -78,7 +78,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (!zoomed) {
                     zoomed = map.fitBounds(circle.getBounds());
                 }
-                map.setView([lat, lng]);
 
             }
 
