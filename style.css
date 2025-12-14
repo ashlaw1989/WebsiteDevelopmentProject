@@ -218,6 +218,51 @@ footer a {
 
 
 
+
+.popup-container {
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.popup-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: rgb(238, 228, 204);
+    padding: 25px;
+    border-radius: 10px;
+    border: 3px ;
+    border-style: solid;
+    border-color: rgb(108, 91, 66);
+    min-width: fit-content;
+    text-align: center;
+    color:rgb(108, 91, 66);
+}
+.popup-container.open {
+    display: flex;
+}
+#map {
+    height: 400px;
+    width: auto;
+}
+.close {
+    color: rgb(108, 91, 66);
+    font-weight: bold;
+    bottom: 0;
+    width: 50%;
+    height: 25px;
+    background-color: rgb(126, 217, 87);
+    border-radius: 10px;
+    margin-left: 25%;
+}
+
+
+
 @media (max-width: 1600px) {
     /* for desktop */
     main #heading {
@@ -402,4 +447,3 @@ footer a {
         margin-top: 50px;
     }
 }
-

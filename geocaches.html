@@ -11,6 +11,10 @@
             nav.classList.toggle('active');
         }
     </script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
 
 <body>
@@ -43,37 +47,37 @@
                 <li id="geocache1">
                     <p id="forest">
                         <strong>Easy Forest</strong>
-                        <button class="start">START</button>
+                        <button class="start" id="start-ef">START</button>
                     </p>
                 </li>
                 <li id="geocache2">
                     <p id="park">
                         <strong>Easy Park</strong>
-                        <button class="start">START</button>
+                        <button class="start" id="start-ep">START</button>
                     </p>
                 </li>
                 <li id="geocache3">
                     <p id="city">
                         <strong>Medium City</strong>
-                        <button class="start">START</button>
+                        <button class="start" id="start-mc">START</button>
                     </p>
                 </li>
                 <li id="geocache4">
                     <p id="forest">
                         <strong>Medium Forest</strong>
-                        <button class="start">START</button>
+                        <button class="start" id="start-mf">START</button>
                     </p>
                 </li>
                 <li id="geocache5">
                     <p id="park">
                         <strong>Hard Park</strong>
-                        <button class="start">START</button>
+                        <button class="start" id="start-hp">START</button>
                     </p>
                 </li>
                 <li id="geocache6">
                     <p id="city">
                         <strong>Hard City</strong>
-                        <button class="start">START</button>
+                        <button class="start" id="start-hc">START</button>
                     </p>
                 </li>
             </ul>
@@ -83,6 +87,18 @@
         Questions? Comments? Concerns?
         <a href="contact.html">Contact Me</a>
     </footer>
+
+    <!-- popup elements -->
+    <div class="popup-container" id="popup-container">
+        <div class="popup-box">
+            <h1>Adventure awaits!</h1>
+                <div id="map"></div>
+            <button class="close" id="close">Close</button>
+        </div>
+    </div>
+
+    <script src="map.js"></script>
+
 </body>
 
 </html>
