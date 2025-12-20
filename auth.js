@@ -1,4 +1,6 @@
 import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-auth.js";
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-auth.js";
+import { auth } from "./firebase-config.js";
 
 // signup
 const signupForm = document.querySelector("#signup-form");
@@ -11,14 +13,15 @@ signupForm.addEventListener("submit", (e) => {
 
     // sign up the user
     createUserWithEmailAndPassword(auth, email, password).then(cred => {
-        console.log(cred.user);
-        alert("Account created successfully!");
-        const modal = document.querySelector("#modal-signup");
-        M.Modal.getInstance(modal).close();
-        signupForm.reset()
-    })
-    .catch((err) => {
+            console.log(cred.user);
+            alert("Account created successfully!");
+            const modal = document.querySelector("#modal-signup");
+            M.Modal.getInstance(modal).close();
+            signupForm.reset()
+        })
+        .catch((err) => {
             console.error(err.message);
             alert("Unable to create account.")
         });
+
 });

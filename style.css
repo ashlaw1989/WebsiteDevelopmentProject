@@ -340,7 +340,9 @@ button[class="cancel"]:hover {
 button[class="signup"]:hover {
     background-color: rgb(238, 228, 204);
 }
-
+#login-message {
+    display: none;
+}
 
 
 @media (max-width: 1600px) {
