@@ -179,15 +179,21 @@ button[type="submit"] {
     border-radius: 10px;
     width: 25%;
 }
-button[type="button"] {
+a[type="button"] {
     background-color: rgb(126, 217, 87);
     border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
     width: 40%;
-    margin-top: -20px;
+    margin-top: -10px;
     height: 30px;
+    padding: 7px 20px;
+    text-decoration: none;
 }
-button[type="button"]:hover {
+a[type="button"]:hover {
     background-color: rgb(238, 228, 204);
+    
 }
 button[type="submit"] {
     height: 30px;
@@ -277,6 +283,66 @@ footer a {
 
 
 
+.modal { 
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 350px;
+    margin-left: 25vw;
+    margin-top: 27px;
+    max-width: 90vw;
+}
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: white;
+    border-radius: 40px;
+    border: 4px ;
+    border-style: solid;
+    border-color: rgb(126, 217, 87);
+    min-width: fit-content;
+    text-align: center;
+    color:rgb(108, 91, 66);
+}
+.input-field {
+    line-height: 2;
+}
+.password-list li {
+    margin-left: 50px;
+    text-align: left;
+    line-height: 1.5;
+}
+button[class="cancel"] {
+    background-color: rgb(126, 217, 87);
+    border-radius: 10px;
+    width: 25%;
+    font-size: 18px;
+}
+button[class="signup"] {
+    background-color: rgb(126, 217, 87);
+    border-radius: 10px;
+    width: 25%;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-bottom: 75px;
+    font-size: 18px;
+}
+button[class="cancel"]:hover {
+    background-color: rgb(216, 127, 127);
+    
+}
+button[class="signup"]:hover {
+    background-color: rgb(238, 228, 204);
+}
+
+
+
 @media (max-width: 1600px) {
     /* for desktop */
     main #heading {
@@ -322,7 +388,7 @@ footer a {
         gap: 50px;
     }
     #login-container {
-    margin-top: 200px;
+    margin-top: 100px;
     padding: 25px 0px;
     }
 }
@@ -413,6 +479,23 @@ footer a {
     #about p {
         font-size: 18px;
     }
+    a[type="button"] {
+        padding: 10px 20px 0px;
+    }
+    .modal { 
+        width: 450px;
+        height: 350px;
+        margin-left: 20vw;
+        margin-top: 90px;
+    }
+    .modal-content {
+        font-size: 18px;
+    }
+    #signup-form p {
+        margin-top: 20px;
+    }
+
+
 }
 @media (max-width: 600px) {
     /* for phone */
@@ -455,5 +538,17 @@ footer a {
     }
     #about p#creator {
         margin-top: 0px;
+    }
+    .modal { 
+        width: 350px;
+        height: 250px;
+        margin-left: 5vw;
+        margin-top: 90px;
+    }
+    .modal-content {
+        font-size: 18px;
+    }
+    #signup-form p {
+        margin-top: 20px;
     }
 }
