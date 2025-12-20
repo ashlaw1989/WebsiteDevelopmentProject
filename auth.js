@@ -12,12 +12,13 @@ signupForm.addEventListener("submit", (e) => {
     // sign up the user
     createUserWithEmailAndPassword(auth, email, password).then(cred => {
         console.log(cred.user);
-        alert("Account created successfully!")
-        const modal = document.querySelector("#modal-signup")
+        alert("Account created successfully!");
+        const modal = document.querySelector("#modal-signup");
         M.Modal.getInstance(modal).close();
         signupForm.reset()
     })
     .catch((err) => {
             console.error(err.message);
+            alert("Unable to create account.")
         });
 });
