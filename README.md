@@ -23,6 +23,7 @@ I also went beyond the course requirements by learning and implementing Firebase
 - Account creation, login, and logout
 - JavaScript form handling validation
 - Interactive map available only when logged in
+- Map markers: geocache locations are blue, your location (if enabled) is green
 - Modal popups for account create, start geocaching, and logout
 
 ## Technologies Used
