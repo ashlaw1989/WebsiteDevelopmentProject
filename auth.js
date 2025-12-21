@@ -53,9 +53,7 @@ loginForm.addEventListener("submit", (e) => {
 
     signInWithEmailAndPassword(auth, email, password).then(cred => {
         console.log(cred.user);
-        alert("Logged in successfully");
-        loginForm.reset();
-        window.location.href = "https://ashlaw1989.github.io/WebsiteDevelopmentProject/geocaches.html";
+        window.location.href = "/WebsiteDevelopmentProject/geocaches.html";
     })
     .catch((err) => {
         console.error(err.message);
