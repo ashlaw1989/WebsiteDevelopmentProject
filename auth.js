@@ -1,6 +1,6 @@
 import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-auth.js";
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-auth.js";
-import { auth } from "./firebase-config.js";
+import { auth } from "./firebase.js";
 
 // signup
 const signupForm = document.querySelector("#signup-form");
@@ -17,7 +17,7 @@ signupForm.addEventListener("submit", (e) => {
             alert("Account created successfully!");
             const modal = document.querySelector("#modal-signup");
             M.Modal.getInstance(modal).close();
-            signupForm.reset()
+            signupForm.reset();
         })
         .catch((err) => {
             console.error(err.message);
