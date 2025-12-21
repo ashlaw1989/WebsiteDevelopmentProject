@@ -29,8 +29,9 @@
                 <ul>
                     <li><a href="index.html"><strong>Home</strong></a></li>
                     <li><a href="geocaches.html"><strong>Geocaches</strong></a></li>
-                    <li><a href="login.html"><strong>Login</strong></a></li>
                     <li><a href="about.html"><strong>About</strong></a></li>
+                    <li><a href="login.html"><strong>Login</strong></a></li>
+                    <li><a href="#" id="logout"><strong>Logout</strong></a></li>
                 </ul>
             </nav>
         </div>
@@ -92,12 +93,21 @@
     <div class="popup-container" id="popup-container">
         <div class="popup-box">
             <h1>Adventure awaits!</h1>
-                <p><a id="login-message" href="login.html?signup=true">Login</a> or create an account to get started</p>
-                <div id="map" ></div>
+            <p><a id="login-message" href="login.html?signup=true">Login</a> or create an account to get started</p>
+            <div id="map"></div>
             <button class="close" id="close">Close</button>
         </div>
     </div>
 
+    <!-- logout element -->
+    <div class="popup-container" id="logout-popup">
+        <div class="popup-box">
+            <h1>You have been logged out.</h1>
+            <button class="close" id="close-logout">Close</button>
+        </div>
+    </div>
+
+    <script type="module" src="auth.js"></script>
     <script type="module" src="map.js"></script>
 
 </body>

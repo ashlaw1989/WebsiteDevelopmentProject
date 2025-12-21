@@ -25,8 +25,9 @@
                 <ul>
                     <li><a href="index.html"><strong>Home</strong></a></li>
                     <li><a href="geocaches.html"><strong>Geocaches</strong></a></li>
-                    <li><a href="login.html"><strong>Login</strong></a></li>
                     <li><a href="about.html"><strong>About</strong></a></li>
+                    <li><a href="login.html"><strong>Login</strong></a></li>
+                    <li><a href="#" id="logout"><strong>Logout</strong></a></li>
                 </ul>
             </nav>
         </div>
@@ -39,7 +40,15 @@
     <main>
         <section id="about">
             <h1>About Fun Finds Geocaching</h1>
-            <p>Fun Finds Geocaching is a project created as part of the Ivy Tech Software Development program during the Fall 2025 8-week Website Development course. This site showcases the skills and concepts learned throughout the class through a custom-built geocaching experience. Each geocache on the site represents a real-world location; however, there are no physical geocaches placed at these locations. The locations are used for demonstration and educational purposes only. When location permissions are enabled on your device, the map will display your current position as a green marker, while blue markers represent available geocaches. Clicking a marker reveals the location and difficulty livel. Any location data or email information provided on this site is used solely to demonstrate website functionality and is not stored, shared, or used for any other purpose.
+            <p>Fun Finds Geocaching is a project created as part of the Ivy Tech Software Development program during the
+                Fall 2025 8-week Website Development course. This site showcases the skills and concepts learned
+                throughout the class through a custom-built geocaching experience. Each geocache on the site represents
+                a real-world location; however, there are no physical geocaches placed at these locations. The locations
+                are used for demonstration and educational purposes only. When location permissions are enabled on your
+                device, the map will display your current position as a green marker, while blue markers represent
+                available geocaches. Clicking a marker reveals the location and difficulty livel. Any location data or
+                email information provided on this site is used solely to demonstrate website functionality and is not
+                stored, shared, or used for any other purpose.
             </p>
             <p id="creator">
                 <b>Created by Ashley Lawrence</b>
@@ -51,6 +60,16 @@
         <a href="mailto:ashleytessamom@yahoo.com">Contact Me</a>
     </footer>
 
+
+    <!-- logout element -->
+    <div class="popup-container" id="logout-popup">
+        <div class="popup-box">
+            <h1>You have been logged out.</h1>
+            <button class="close" id="close-logout">Close</button>
+        </div>
+    </div>
+
+    <script type="module" src="auth.js"></script>
 
 </body>
 

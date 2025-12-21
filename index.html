@@ -25,8 +25,9 @@
                 <ul>
                     <li><a href="index.html"><strong>Home</strong></a></li>
                     <li><a href="geocaches.html"><strong>Geocaches</strong></a></li>
-                    <li><a href="login.html"><strong>Login</strong></a></li>
                     <li><a href="about.html"><strong>About</strong></a></li>
+                    <li><a href="login.html"><strong>Login</strong></a></li>
+                    <li><a href="#" id="logout"><strong>Logout</strong></a></li>
                 </ul>
             </nav>
         </div>
@@ -65,6 +66,17 @@
         Questions? Comments? Concerns?
         <a href="mailto:ashleytessamom@yahoo.com">Contact Me</a>
     </footer>
+
+    <!-- logout element -->
+    <div class="popup-container" id="logout-popup">
+        <div class="popup-box">
+            <h1>You have been logged out.</h1>
+            <button class="close" id="close-logout">Close</button>
+        </div>
+    </div>
+
+    <script type="module" src="auth.js"></script>
+
 </body>
 
 </html>
