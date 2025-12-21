@@ -1,10 +1,10 @@
-import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-auth.js";
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-auth.js";
 import { onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-auth.js";
 import { auth } from "./firebase.js";
 
 // signup
 const signupForm = document.querySelector("#signup-form");
-if (signupForm) {
+if (signupForm) {                               // makes logout modal work on all pages outside login.html
     signupForm.addEventListener("submit", (e) => {
         e.preventDefault();
 
@@ -38,7 +38,26 @@ document.getElementById("logout").addEventListener("click", (e) => {
     logout.style.display = "flex";
 });
 
-
 closeLogout.addEventListener("click", () => {
     logout.style.display = "none";
+})
+
+// login
+const loginForm = document.querySelector("#login-container");
+loginForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    // get user info
+    const email = loginForm["email"].value;
+    const password = loginForm["password"].value;
+
+    signInWithEmailAndPassword(auth, email, password).then(cred => {
+        console.log(cred.user);
+        alert("Logged in successfully");
+        loginForm.reset();
+    })
+    .catch((err) => {
+        console.error(err.message);
+        alert("Login failed");
+    });
 })
