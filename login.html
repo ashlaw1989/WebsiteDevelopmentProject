@@ -59,9 +59,8 @@
             </p>
             <p>
                 <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Password"
-                     required>
-                     <!-- pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{10,18}$" -->
+                <input type="password" id="password" placeholder="Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{10,18}$" required>
+                     
             </p>
             <button type="submit">Login</button>
             <p id="new-account">Don't have an account yet?</p>
@@ -85,7 +84,7 @@
                 </div>
                 <div class="input-field">
                     <label for="signup-password">New password</label>
-                    <input type="password" id="signup-password" placeholder="P@ssw0rd" required>
+                    <input type="password" id="signup-password" placeholder="P@ssw0rd" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{10,18}$" required>
                 </div>
                 <p>Password must be 10 - 18 characters and contain:</p>
                 <ul class="password-list">
