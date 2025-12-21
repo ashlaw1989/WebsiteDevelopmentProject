@@ -247,6 +247,7 @@ footer a {
     left: 0;
     right: 0;
     bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
 }
 .popup-box {
     display: flex;
@@ -262,7 +263,17 @@ footer a {
     text-align: center;
     color:rgb(108, 91, 66);
 }
-
+.popup-box p {
+    font-size: 20px;
+}
+.popup-box a {
+    color: rgb(108, 91, 66);
+    font-weight: bold;
+    text-decoration: none;
+}
+.popup-box a:hover {
+    color: rgb(238, 228, 204);
+}
 .popup-container.open {
     display: flex;
 }
@@ -279,6 +290,10 @@ footer a {
     background-color: rgb(238, 228, 204);
     border-radius: 10px;
     margin-left: 25%;
+}
+.close:hover {
+    color: rgb(238, 228, 204);
+    background-color: rgb(108, 91, 66);
 }
 
 
