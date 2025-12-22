@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fun Finds Geocaching How It Works</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('navLinks');
+            nav.classList.toggle('active');
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav id="navLinks">
+                <ul>
+                    <li><a href="index.html"><strong>Home</strong></a></li>
+                    <li><a href="geocaches.html"><strong>Geocaches</strong></a></li>
+                    <li><a href="howItWorks.html"><strong>How It Works</strong></a></li>
+                    <li><a href="about.html"><strong>About</strong></a></li>
+                    <li><a href="login.html"><strong>Login</strong></a></li>
+                    <li><a href="#" id="logout"><strong>Logout</strong></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="logo-wrapper">
+        <img src="FunFindsGeocachingLogo.png" alt="Logo with map, compass, and treasure chest" class="logo">
+    </div>
+
+    <main class="howItWorks">
+        <h1>How It Works</h1>
+        <p>Fun Finds Geocaching lets users explore geocache locations based on difficulty.</p>
+
+        <h2>Getting Started</h2>
+        <ol>
+            <li>Log in or create an account</li>
+            <li>Select a geocache difficulty and location</li>
+            <li>View interactive map</li>
+            <li>Use your location to track your progress</li>
+        </ol>
+
+        <h2>Difficulty Levels</h2>
+        <ul>
+            <li><strong>Easy: </strong>Beginner-friendly locations</li>
+            <li><strong>Medium: </strong>Some challenge involved</li>
+            <li><strong>Hard: </strong>Advanced geocaching skills</li>
+        </ul>
+
+        <p class="disclaimer"><em>Although the locations on the map are real, the geocaches are fictional and used for demonstration. Any data collected, such as location and email, are used solely to enable the map and authentication features with Firebase and is not stored or shared beyond Firebase and this website.</em></p>
+
+    </main>
+    <footer>
+        Questions? Comments? Concerns?
+        <a href="mailto:ashleytessamom@yahoo.com">Contact Me</a>
+    </footer>
+
+</body>
+
+</html>

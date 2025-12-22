@@ -14,6 +14,7 @@ I also went beyond the course requirements by learning and implementing Firebase
 
 - Home
 - Geocaches
+- How It Works
 - About
 - Login
 
