@@ -222,7 +222,20 @@ button[type="submit"]:hover {
     line-height: 1.5;
 }
 #about p#creator {
-    margin-top: 100px;
+    margin-top: 50px;
+}
+.external-links a {
+    text-decoration: none;
+    color: rgb(108, 91, 66);
+    font-weight: bolder;
+}
+.external-links p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.external-links a:hover {
+    text-decoration: none;
+    color: rgb(126, 217, 87);
 }
 
 
@@ -570,7 +583,10 @@ button[class="signup"]:hover {
         font-size: 14px;
     }
     #about p#creator {
-        margin-top: 0px;
+        margin-top: 15px;
+    }
+    #about p {
+        margin-bottom: 0;
     }
     .modal { 
         width: 350px;
