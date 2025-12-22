@@ -31,10 +31,12 @@ I also went beyond the course requirements by learning and implementing Firebase
 - HTML5
 - CSS3
 - JavaScript
-- Firebase Authentication
-- Firebase Firestore
+- Firebase Authentication & Firestore
 - Leaflet.js
 - GitHub Pages
+- ADA compliance considerations
+- Video & audio embedding (login page logo)
+- Forms and hyperlinks
 
 ## Data & Privacy Notice
 
