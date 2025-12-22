@@ -106,9 +106,9 @@ main {
     max-width: 1500px;
 }
 #geocaches li {
-    border: 1px;
+    border: 3px;
     border-style: solid;
-    border-color: rgb(126, 217, 87);
+    border-color: rgb(108, 91, 66);
     background-color: rgb(126, 217, 87);
     border-radius: 10px;
     list-style: none;
